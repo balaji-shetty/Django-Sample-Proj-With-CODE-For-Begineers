@@ -1,0 +1,54 @@
+  UBUNTU Steps
+STEP-1 Install Python
+STEP-2   sudo apt-get update
+          sudo apt-get -y upgrade
+STEP-3   sudo apt-get install -y python3-pip
+STEP -4   Setting Up a Virtual Environment
+           sudo apt-get install -y python3-venv
+
+sudo apt-get install -y python3-pip
+
+
+
+
+  930  mkdir environment
+  931  cd environment/
+
+  932  python3 -m venv my_env
+  933  source my_env/bin/activate
+
+  FOLLOWING STEPS ARE COMMON to ALL OS. Works for Windows as well as Linux.
+
+  934  pip install django
+  
+  935  django-admin startproject project_name 
+  936  cd project_name/
+
+  937  python manage.py startapp app_name
+  962  python manage.py startapp LIBRARY
+  963  python manage.py startapp ACCOUNT
+
+  REGISTER APP app_name,LIBRARY,ACCOUNT in project_name/project_name/setting.py
+
+
+  open app_name/models.py and define models
+  open app_name/admin.py and register models
+
+  open LIBRARAY/models.py and define models
+  open LIBRARAY/admin.py and register models
+
+  open ACCOUNT/models.py and define models
+  open ACCOUNT/admin.py and register models
+
+
+  968  python manage.py makemigrations
+  969  python manage.py migrate
+  942  python manage.py createsuperuser
+  943  python manage.py runserver
+
+  STORE ALL Environment Library and Packages
+  977  pip freeze > requirements. txt. 
+  978  ls
+  
+  INstall ALL Library and Packages on Cloud or Client MAchine.
+  980  pip install requirements.txt
