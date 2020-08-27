@@ -1,0 +1,42 @@
+C:\Users\Balaji>pip install  e
+copy  project_name to your machine.
+cd project_name
+C:\Users\Balaji>pip install virtualenv
+C:\Users\Balaji\project_name>virtualenv my_env
+
+python -m virtualenv .
+
+Microsoft Windows [Version 10.0.18363.1016]
+
+C:\Users\Balaji>cd Documents
+
+C:\Users\Balaji\Documents>mkdir django-projecrt
+
+C:\Users\Balaji\Documents>cd django-projecrt
+
+https://www.youtube.com/watch?v=LQTMqGns7Co
+
+C:\Users\Balaji\Documents\django-projecrt>python -m venv my_env
+
+C:\Users\Balaji\Documents\django-projecrt>my_env\Scripts\activate
+
+(my_env) C:\Users\Balaji\Documents\django-projecrt\>cd my_env
+***** copy project_name here in my_env folder. ( Download Code from GitHub and unzip it) ***
+
+(my_env) C:\Users\Balaji\Documents\django-projecrt\my_env>cd project_name
+
+(my_env) C:\Users\Balaji\Documents\django-projecrt\my_env\project_name>pip install django
+
+(my_env) C:\Users\Balaji\Documents\django-projecrt> py manage.py makemigrations
+(my_env) C:\Users\Balaji\Documents\django-projecrt> python3 manage.py makemigrations 
+  **** Check both options as per Django Version
+(my_env) C:\Users\Balaji\Documents\django-projecrt> py manage.py migrate
+(my_env) C:\Users\Balaji\Documents\django-projecrt> py manage.py runservers 
+
+
+
+
+
+
+
+
