@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <title>List of persons</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+       <style>
+		.myTable { 
+  		width: 40%;
+  		text-align: left;
+  		background-color: lemonchiffon;
+  		border-collapse: collapse; 
+  		}
+		.myTable th { 
+  		background-color: lightblue;
+  		color: red; 
+  		}
+		.myTable td, 
+		.myTable th { 
+  		padding: 10px;
+  		border: 2px solid goldenrod; 
+  		}
+
+  		.myTable1 { 
+  		width: 40%;
+  		text-align: left;
+  		background-color: lightblue;
+  		border-collapse: collapse; 
+  		}
+		.myTable1 th { 
+  		background-color: goldenrod;
+  		color: white; 
+  		}
+		.myTable1 td, 
+		.myTable1 th { 
+  		padding: 10px;
+  		border: 2px solid goldenrod; 
+  		}
+
+  		hr{
+  		color: #f00;
+		background-color: #f00;
+		height: 5px;
+		}
+		
+		</style>
+
+
+    </head>
+    
+    <body>
+    	<h2> <center>WELCOME TO </h2></center>
+    	  <h3><center><font color="red">Developed Under the Guidance of SHRI. P. . INDIA. </font> </h3></center>
+    	  <hr color="green">
+    	  <h4> <center> <b><i>SUMMARY EACH USER </i></b></center> </h4>
+    	 
+
+    	 		<table border=1  color="red" align="center" >
+				<tr>
+  				<th>USER NAMES</th>
+          <th>Student_name</th>
+          <th>City</th>
+        <th>Address</th>
+          <th>Branch</th>
+          <th>Education</th>
+          <th>experience</th>
+ 				</tr>
+ 
+
+		  
+
+	    		{% for entry in stud12 %}
+	    		<tr>
+  				<td> {{ entry.user }} </td>
+          <td align="center"> {{ entry.student_name }} </td>
+          <td align="center"> {{ entry.city }} </td>
+          <td align="center"> {{ entry.address }} </td>
+          <td align="center"> {{ entry.branch }} </td>
+          <td align="center"> {{ entry.education }} </td>
+          <td align="center"> {{ entry.experience }} </td>
+
+ 				</tr>
+			    	
+			  
+				{% endfor %}
+
+				</table>
+				<hr>
+
+				<table border=1  color="red" align="center" class="myTable1">
+				<tr>
+  				<th>City Name</th>
+  				<th>Country</th>
+ 				</tr>
+  
+
+				{% for entry1 in city12 %}
+				<tr>
+  				<td> {{ entry1.city_name }} </td>
+  				<td align="center"> {{ entry1.country }} </td>
+ 				</tr>
+			    
+
+			    	
+				{% endfor %}
+
+
+				
+        
+    	
+    	
+    </body>
+</html>
+
+
+
